@@ -1,0 +1,57 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.85); /* darker for better blend */
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* subtle depth */
+}
+
+/* Logo */
+.main-header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00c6ff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Navigation */
+.main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.main-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-header nav a:hover {
+  color: #00c6ff;
+}
+
+/* Logout button (if you have one) */
+.main-header button {
+  background: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.main-header button:hover {
+  background: #ff2b2b;
+}

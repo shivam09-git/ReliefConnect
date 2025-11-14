@@ -1,0 +1,1 @@
+import mongoose from 'mongoose'; const donationSchema = new mongoose.Schema({ donorName:String, type:{type:String, enum:['money','food','medicine'], default:'money'}, amount:Number, description:String, status:{type:String, default:'Pending'} },{timestamps:true}); export default mongoose.model('Donation', donationSchema);

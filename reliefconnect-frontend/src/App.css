@@ -1,0 +1,27 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #222; /* Same tone as header */
+  overflow-x: hidden;
+}
+
+/* Fixed header space handling */
+.main-content {
+  margin-top: 70px; /* matches header height */
+  background-color: #edeff0; /* ✅ same as header background */
+  min-height: 100vh;
+}
+
+/* Optional global link/button feel */
+a, button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
